@@ -3,6 +3,7 @@ import profileData from "@/data/profile.json";
 export interface ProfileLink {
   label: string;
   url: string;
+  detail?: string;
 }
 
 export interface Profile {

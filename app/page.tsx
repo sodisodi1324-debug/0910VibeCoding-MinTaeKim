@@ -5,7 +5,7 @@ import Links from "@/components/Links";
 
 export default function Home() {
   return (
-    <main className="mx-auto flex w-full max-w-2xl flex-1 flex-col gap-10 px-6 py-16 sm:py-24">
+    <main className="mx-auto flex w-full max-w-[600px] flex-1 flex-col gap-[72px] px-6 py-24 sm:py-[96px]">
       <Intro name={profile.name} tagline={profile.tagline} bio={profile.bio} />
       <Interests interests={profile.interests} />
       <Links links={profile.links} />
