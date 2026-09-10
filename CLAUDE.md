@@ -3,7 +3,7 @@
 ## 개요
 개인 소개를 위한 한 페이지짜리 웹사이트. 소개 글(Bio), 관심사(Interests), 링크(Links) 섹션으로 구성한다.
 
-> 현재 이 디렉토리는 아직 스캐폴딩되지 않은 빈 프로젝트다. 이 문서는 앞으로 `create-next-app` 등으로 프로젝트를 생성하고 개발을 시작할 때 따를 가이드 역할을 한다.
+> `create-next-app`으로 스캐폴딩 완료됨 (App Router, TypeScript, Tailwind). Next.js 관련 상세 규칙은 `@AGENTS.md` 참고.
 
 ## 기술 스택
 - **Next.js** (App Router)
@@ -22,16 +22,20 @@
 
 이 항목들은 이후 단계에서 별도로 다룬다. 지금 단계에서 관련 코드/설정을 추가하지 않는다.
 
-## 예상 디렉토리 구조
-스캐폴딩 시 아래 구조를 기준으로 한다 (아직 생성되지 않음):
-
+## 디렉토리 구조
 ```
 /app
-  page.tsx        # 단일 페이지, JSON 데이터를 읽어 섹션 렌더링
+  page.tsx        # 단일 페이지, profile 데이터를 섹션 컴포넌트에 전달
   layout.tsx
   globals.css     # Tailwind 진입점
+/components
+  Intro.tsx       # 이름 / tagline / bio
+  Interests.tsx   # 관심사 태그
+  Links.tsx       # 링크 목록
+/lib
+  profile.ts      # Profile 타입 정의 + profile.json import
 /data
-  profile.json    # 소개 글 / 관심사 / 링크 데이터
+  profile.json    # 소개 글 / 관심사 / 링크 실데이터 (플레이스홀더 포함, 실제 내용으로 교체 필요)
 ```
 
 ## 데이터 형태 (`data/profile.json`)

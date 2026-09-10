@@ -1,0 +1,10 @@
+{
+  "name": "김민태",
+  "tagline": "한 줄 소개 문구를 여기에 적어주세요",
+  "bio": "자기소개 본문을 이곳에 작성합니다. 2~3문장 정도로 간단하게 본인을 소개해 보세요.",
+  "interests": ["관심사 1", "관심사 2", "관심사 3"],
+  "links": [
+    { "label": "GitHub", "url": "https://github.com/sodisodi1324-debug" },
+    { "label": "Email", "url": "mailto:sodisodi1324@gmail.com" }
+  ]
+}
